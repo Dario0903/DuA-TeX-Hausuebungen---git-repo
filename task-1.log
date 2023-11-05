@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.30)  5 NOV 2023 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.30)  5 NOV 2023 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/Hausübungen/main.tex"
-(c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/Hausübungen/main.tex
+**"c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/DuA TeX Hausuebungen - git repo/task-1.tex"
+(c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/DuA TeX Hausuebungen - git repo/task-1.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
@@ -849,8 +849,8 @@ File: tikzlibraryscopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box137
 \pgf@layerboxsaved@background=\box138
-) (main.aux)
-\openout1 = `main.aux'.
+) (task-1.aux)
+\openout1 = `task-1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
@@ -871,9 +871,9 @@ LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 Package hyperref Info: Link coloring OFF on input line 51.
- (main.out) (main.out)
+ (task-1.out) (task-1.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `task-1.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -956,24 +956,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--84
 
 [1
 
-{C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (main.aux)
+{C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (task-1.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `task-1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  37271 strings out of 475248
- 838114 string characters out of 5757813
+ 838325 string characters out of 5757813
  1940785 words of memory out of 5000000
  58230 multiletter control sequences out of 15000+600000
  564379 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,8n,121p,11034b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,8n,121p,11055b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (2 pages, 134141 bytes).
+Output written on task-1.pdf (2 pages, 134141 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)

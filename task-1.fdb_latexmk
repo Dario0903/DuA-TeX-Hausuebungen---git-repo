@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1699193442 "c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/Hausübungen/main.tex" "main.pdf" "main" 1699193445 0
+["pdflatex"] 1699194400 "c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/DuA TeX Hausuebungen - git repo/task-1.tex" "task-1.pdf" "task-1" 1699194403 0
   "C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699193344 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/dario/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1696071751 24141908 cdaeff8da194fb11a1248f3c9724fde1 ""
   "C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -220,12 +220,12 @@
   "C:/Users/dario/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/dario/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/dario/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/Hausübungen/main.tex" 1699193442 5631 e153ba80bb2cf592bd8fd27a0d304b9f ""
-  "main.aux" 1699193445 721 e5b77b740a23a4eba0c6f9d92f0ef6a6 "pdflatex"
-  "main.out" 1699193445 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "c:/Users/dario/Documents/TeX/Datenstrukturen und Algorithmen/DuA TeX Hausuebungen - git repo/task-1.tex" 1699194396 5631 e153ba80bb2cf592bd8fd27a0d304b9f ""
+  "task-1.aux" 1699194403 721 e5b77b740a23a4eba0c6f9d92f0ef6a6 "pdflatex"
+  "task-1.out" 1699194402 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
+  "task-1.aux"
+  "task-1.log"
+  "task-1.out"
+  "task-1.pdf"
   (rewritten before read)

@@ -1,7 +1,7 @@
-PWD C:\Users\dario\Documents\TeX\Datenstrukturen und Algorithmen\Hausübungen
+PWD C:\Users\dario\Documents\TeX\Datenstrukturen und Algorithmen\DuA TeX Hausuebungen - git repo
 INPUT C:\Users\dario\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\dario\Documents\TeX\Datenstrukturen und Algorithmen\Hausübungen\main.tex
-OUTPUT main.log
+INPUT c:\Users\dario\Documents\TeX\Datenstrukturen und Algorithmen\DuA TeX Hausuebungen - git repo\task-1.tex
+OUTPUT task-1.log
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrkbase.sty
@@ -337,18 +337,18 @@ INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\dec
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
-INPUT .\main.aux
-INPUT .\main.aux
-INPUT main.aux
-OUTPUT main.aux
-INPUT .\main.out
-INPUT .\main.out
-INPUT main.out
-INPUT main.out
-INPUT .\main.out
-INPUT .\main.out
-OUTPUT main.out
-OUTPUT main.pdf
+INPUT .\task-1.aux
+INPUT .\task-1.aux
+INPUT task-1.aux
+OUTPUT task-1.aux
+INPUT .\task-1.out
+INPUT .\task-1.out
+INPUT task-1.out
+INPUT task-1.out
+INPUT .\task-1.out
+INPUT .\task-1.out
+OUTPUT task-1.out
+OUTPUT task-1.pdf
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
@@ -392,9 +392,9 @@ INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\dario\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT main.aux
-INPUT .\main.out
-INPUT .\main.out
+INPUT task-1.aux
+INPUT .\task-1.out
+INPUT .\task-1.out
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb

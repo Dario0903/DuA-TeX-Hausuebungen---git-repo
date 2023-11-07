@@ -90,30 +90,23 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 \begin{enumerate}[a)]
 	\item $f \ll g \ll h$ % inline mathmode
 	\begin{enumerate}[1.]
-		\item $f_1(n) = 42n + 17 + 120n^2 + 23n^3$
-		\item $f_2(n) = 4^{1 + \log(n^2)} + 2^{4 \cdot \log(2^n)}$
-		\item $f_3(n) = \left(\sqrt{3n} + \sqrt{12n}\right) \cdot \left(-\sqrt{3n} + \sqrt{12n}\right)$
-		\item $f_4(n) = \log(9n^2) + \log(2n^5)$
-		\item $f_5(n) = \frac{6n^2-18n-10}{(2n+1)(n-5)}$
-		\item $f_6(n) = \log\left(\sqrt{2 \pi n}\left(\frac{n}{e}\right)^{\!n}\right)$
+		\item $f_3(n) = \left(\sqrt{3n} + \sqrt{12n}\right) \cdot \left(-\sqrt{3n} + \sqrt{12n}\right) = -3n + 12n = 9n = O(n)$
+		\item $f_5(n) = \frac{6n^2-18n-10}{(2n+1)(n-5)} = O(n^2)$
+
+		\item $f_2(n) = 4^{1 + \log(n^2)} + 2^{4 \cdot \log(2^n)} = O(4^{\log(n^2)})$\\
+			  $\lim_{n \to \infty}4^{log(n^2)} > (2^4)^{\log(2^n)}$
+		
+		\item $f_4(n) = \log(9n^2) + \log(2n^5) = O(\log(n^5))$
+		\item $f_6(n) = \log\left(\sqrt{2 \pi n}\left(\frac{n}{e}\right)^{\!n}\right) = O(\log(n^n))$\\
+		$\lim_{n \to \infty}\log(\sqrt{n}\ n^n)$\\
+		$\lim_{n \to \infty}\log(n^{n+\frac{1}{2}})$\\
+		$\lim_{n \to \infty}\log(n^n)$
+		
+		\item $f_1(n) = 42n + 17 + 120n^2 + 23n^3 = O(n^3)$
+
+			  
 	\end{enumerate}
-	% display-math mode
-	$$
-		\lim_{n \to \infty} \frac{a}{b} = c
-	$$
-	% Wenn eine Gleichung zu breit für eine Zeile ist, kann sie mit multline auf mehrere Zeilen verteilt werden.
-	\begin{multline*}
-		(123,456,731,479,871,357 + 123,489,741,971,731) \cdot (1,324,713 + 474,313) \\
-		= 123,580,221,221,843,088 \cdot 1,799,026 \\
-		= 222,324,031,063,847,483,232,288
-	\end{multline*}
-	% Alternativ bietet sich auch die align Umgebung an, die das &-Zeichen zum anordnen verwendet 
-	\begin{align*}
-		(a + b)^2 
-		&= (a + b)(a + b) \\
-		&= a^2 + ba + ab + b^2 \\
-		&= a^2 + 2ab + b^2
-	\end{align*}
+
 	\item \textbf{Satz 1.22} Seien $f, g$ Funktionen. Falls $g \in O(f)$, dann folgt $f + g \in \Theta(f)$.
 \end{enumerate}
 

@@ -107,16 +107,16 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 			  
 	\end{enumerate}
 
-	\item \textbf{Satz 1.22} Seien $f, g$ Funktionen. Falls $g \in O(f)$, dann folgt $f + g \in \Theta(f)$.
+	\item{
+		\textbf{Satz 1.22} Seien $f, g$ Funktionen. Falls $g \in O(f)$, dann folgt $f + g \in \Theta(f)$.\\
+		\\hab noch nicht in \LaTeX übersetzt
+	} 
 \end{enumerate}
 
-
+\break
 \section*{Aufgabe 2}
 \begin{enumerate}[a)]
-	\item
-	Graphen können mit dem Tikz-Paket erstellt werden\\
-	\url{https://tex.cloud.uni-hannover.de/learn/latex/TikZ_package}\\
-	\url{https://tobiw.de/tbdm/tikz-adventskalender}
+	\item Gegeben ist folgender Graph. Geben Sie einen Tiefensuche-Baum von $(G, 0)$ an. 
 	\begin{center}
 	\begin{tikzpicture}
 		\node[draw, circle] (0) {0};
@@ -137,18 +137,95 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 		\draw[-Stealth] (3) to[bend right] (5);
 	\end{tikzpicture}
 	\end{center}
-	\item
-	\item
+	Tiefensuche-Baum von $(G, 0)$:
+	\begin{center}
+		\begin{tikzpicture}[node distance={15mm}]
+			\node[draw, circle] (0){0};
+			\node[draw, circle, below left of=0] (1){1};
+			\node[draw, circle, below right of=0] (3){3};
+			\node[draw, circle, below left of=1] (5){5};
+			\node[draw, circle, below left of=5] (2){2};
+			\node[draw, circle, below right of=5] (4){4};
+
+			\draw[-Stealth] (0) -- (1);
+			\draw[-Stealth] (0) -- (3);
+			\draw[-Stealth] (1) -- (5);
+			\draw[-Stealth] (5) -- (2);
+			\draw[-Stealth] (5) -- (4);
+					
+		\end{tikzpicture}
+		\end{center}
+		\break
+		\item{
+			Algorithmus: Wir fangen mit den Ecken an, die nur 2 Verbindungen haben.\\
+			So ist eindeutig, wenn Ecke X in A ist muss der Verbund in die Menge B!\\
+			\center \begin{enumerate}[1.]
+			\item Wähle 0. Verbinde 1 und 3 in B:\\
+			\begin{center}
+				\begin{tikzpicture}[node distance={50mm}]
+					\node[label=A] (0) {0};
+					\node[label=B, right of=0] (1) {1};
+					\node[right of=0, below=1] (3) {3};
+					
+					\draw[-] (0) -- (1);
+					\draw[-] (0) -- (3);
+	
+				\end{tikzpicture}
+			\end{center}
+			\item{
+				Wähle 3.\\ 3 kommt wegen der Verbindung die bereits berücksichtigt wurde, in B.\\
+				Die 5 als weitere Verbindung muss daher in A.\\
+				\begin{center}
+					\begin{tikzpicture}[node distance={50mm}]
+						\node[label=A] (0) {0};
+						\node[label=B, right of=0] (1) {1};
+						\node[right of=0, below=1] (3) {3};
+						\node[left of=3] (5) {5};
+	
+						\draw[-] (0) -- (1);
+						\draw[-] (0) -- (3);
+						\draw[-] (5) -- (3);
+					\end{tikzpicture}
+				\end{center}
+			}
+			\item{
+				Wähle 1.\\ Verbindungen 2 und 4 müssen in A.\\
+				\begin{center}
+					\begin{tikzpicture}[node distance={50mm}]
+						\node[label=A] (0) {0};
+						\node[label=B, right of=0] (1) {1};
+						\node[right of=0, below=1] (3) {3};
+						\node[left of=3] (5) {5};
+						\node[below=3] (2) {2};
+						\node[below=2] (4) {4};
+	
+						\draw[-] (0) -- (1);
+						\draw[-] (0) -- (3);
+						\draw[-] (5) -- (3);
+						\draw[-] (2) -- (1);
+						\draw[-] (4) -- (1);
+					\end{tikzpicture}
+				\end{center}
+			}
+			\item {
+				Wähle 2. Verbindungen 5 und 1 müssen in B.\\
+				X Nicht möglich, durch die drei Kanten an 5 muss 5 jeweils für die anderen\\
+				beiden in die gegenteilige Menge.
+			}
+		\end{enumerate}
+	
+	
+		}
+	\item haben wir nicht??
 \end{enumerate}
 
-
+\break
 \section*{Aufgabe 3}
 \begin{enumerate}[a)]
-	\item \
-	\begin{center}
+	\item{
 	\begin{tikzpicture}[baseline=(0.center)]
 		\node[draw, circle, fill=blue!33!white] (0) {0};
-		\node[draw, circle, right = of 0] (1) {1};
+		\node[label=above:{Graph 1}, draw, circle, right = of 0] (1) {1};
 		\node[draw, circle, right = of 1] (2) {2};
 		\node[draw, circle, below = of 0] (3) {3};
 		\node[draw, circle, right = of 3] (4) {4};
@@ -160,11 +237,10 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 		\draw[-] (2) -- (4);
 		\draw[-] (3) -- (4);
 		\draw[-] (3) to[bend right] (5);
-	\end{tikzpicture}
-	\qquad\qquad
+	\end{tikzpicture}\quad\quad
 	\begin{tikzpicture}[baseline=(0.center)]
 		\node[draw, circle, fill=red!33!white] (0) {0};
-		\node[draw, circle, right = of 0] (1) {1};
+		\node[label=above:{Graph 2}, draw, circle, right = of 0] (1) {1};
 		\node[draw, circle, right = of 1] (2) {2};
 		\node[draw, circle, below = of 0] (3) {3};
 		\node[draw, circle, right = of 3] (4) {4};
@@ -176,9 +252,40 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 		\draw[-] (5) -- (2);
 		\draw[-] (0) -- (1);
 		\draw[-] (3) to[bend right] (5);
-	\end{tikzpicture}
+	\end{tikzpicture}\\
+
+	\subsection*{Graph 1}
+	\begin{center}
+		\vspace{-5em}
+		\begin{tikzpicture}
+			\node[draw, circle, fill=blue!33!white] (0) {0};
+			\node[draw, circle, right = of 0] (1) {1};
+			\node[draw, circle, below = of 0] (2) {2};
+			\node[label=below:A, draw, circle, below = of 2] (3) {3};
+			\node[draw, circle, right = of 2] (4) {4};
+			\node[label=below:B, draw, circle, right = of 3] (5) {5};
+			\draw[-, looseness=2] (0) to[out=45, in=45] (5);
+			\draw[-] (0) -- (1);
+			\draw[-] (1) -- (2);
+			\draw[-] (1) -- (3);
+			\draw[-] (2) -- (4);
+			\draw[-] (3) -- (4);
+			\draw[-] (3) to[looseness=0.5, bend right] (5);
+			\node[text width=10cm] at (9,-0.5) {
+				Der Graph ist zweiteilbar.
+				Anhand des links zu sehenden Graphen ist deutlich zu sehen, dass man den Graph so zeichnen kann, dass die Ecken der jeweiligen Mengen auf verschiedenen Seiten sind und das Kriterium vollständig erfüllt ist.  	
+
+			};
+		\end{tikzpicture}
 	\end{center}
-	\item
-	\item
+	\subsection*{Graph 2}
+	Bipartitheitskriterium: Ein Graph ist genau dann zweiteilbar (oder bipartit), wenn er keinen Kreis ungerader Länge enthält.
+	Hier ist aber ein Kreis der Länge von 5 enthalten, deshalb ist dieser Graph nicht zweiteilbar. 
+	Der Knoten 5 hat drei Kanten, die von ihm ausgehen und somit ist die Gruppierung in eine der Mengen A oder B nicht möglich.\\
+	\center \includegraphics[scale=1] {graph2.jpg}
+	}
+	\pagebreak
+	\item haben wir nicht??
+	\item haben wir nicht??
 \end{enumerate}
 \end{document}

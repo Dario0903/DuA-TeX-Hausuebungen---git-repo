@@ -4,10 +4,10 @@
 \def\Nr{1}					%Hier die Nummer des Übungsblatts eintragen
 \def\NameA{Dario Estermann}	%Hier den Name eintragen
 \def\MatA{10054384}			%Hier die Matrikelnummer eintragen
-\def\NameB{xxxxxxx}		%Hier den Name des 2. Gruppenmitglieds eintragen
-\def\MatB{xxxxx}			%Hier die Matrikelnummer des 2. Gruppenmitglieds eintragen
-\def\NameC{}				%Name 3. Gruppenmitglied
-\def\MatC{}					%Matrikelnummer 3. Gruppenmitglied
+\def\NameB{Steffan Wolter}		%Hier den Name des 2. Gruppenmitglieds eintragen
+\def\MatB{10037044}			%Hier die Matrikelnummer des 2. Gruppenmitglieds eintragen
+\def\NameC{Ümit Akbas}				%Name 3. Gruppenmitglied
+\def\MatC{2295890}					%Matrikelnummer 3. Gruppenmitglied
 \def\NameD{}				%Name 4. Gruppenmitglied
 \def\MatD{}					%Matrikelnummer 4. Gruppenmitglied
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,11 +84,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ab hier bearbeiten 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn}.
-
 \section*{Aufgabe 1}
 \begin{enumerate}[a)]
-	\item $f \ll g \ll h$ % inline mathmode
+	\item $1 \ll 2 \ll ... \ll 6$ % inline mathmode
 	\begin{enumerate}[1.]
 		\item $f_3(n) = \left(\sqrt{3n} + \sqrt{12n}\right) \cdot \left(-\sqrt{3n} + \sqrt{12n}\right) = -3n + 12n = 9n = O(n)$
 		\item $f_5(n) = \frac{6n^2-18n-10}{(2n+1)(n-5)} = O(n^2)$
@@ -116,9 +114,9 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 \break
 \section*{Aufgabe 2}
 \begin{enumerate}[a)]
-	\item Gegeben ist folgender Graph. Geben Sie einen Tiefensuche-Baum von $(G, 0)$ an. 
+	\item Gegeben ist folgender Graph. Geben Sie einen Tiefensuche-Baum von $(G, 0)$ an.
 	\begin{center}
-	\begin{tikzpicture}
+	\begin{tikzpicture}[node distance={20mm}]
 		\node[draw, circle] (0) {0};
 		\node[draw, circle, right = of 0] (1) {1};
 		\node[draw, circle, right = of 1] (2) {2};
@@ -137,9 +135,10 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 		\draw[-Stealth] (3) to[bend right] (5);
 	\end{tikzpicture}
 	\end{center}
+	\vspace{5em}
 	Tiefensuche-Baum von $(G, 0)$:
 	\begin{center}
-		\begin{tikzpicture}[node distance={15mm}]
+		\begin{tikzpicture}[node distance={25mm}]
 			\node[draw, circle] (0){0};
 			\node[draw, circle, below left of=0] (1){1};
 			\node[draw, circle, below right of=0] (3){3};
@@ -284,8 +283,7 @@ Informationen zu \LaTeX{} auf z.B.: \url{https://tex.cloud.uni-hannover.de/learn
 	Der Knoten 5 hat drei Kanten, die von ihm ausgehen und somit ist die Gruppierung in eine der Mengen A oder B nicht möglich.\\
 	\center \includegraphics[scale=1] {graph2.jpg}
 	}
-	\pagebreak
-	\item haben wir nicht??
-	\item haben wir nicht??
+	\item siehe "hausuebung.py"
+	\item siehe "hausuebung.py"
 \end{enumerate}
 \end{document}
